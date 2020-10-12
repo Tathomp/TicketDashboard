@@ -1,0 +1,42 @@
+﻿@{
+
+    var users = ViewData["Users"] as List<Microsoft.AspNetCore.Identity.IdentityUser>;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+<head>
+    <script src="~/js/chart.js-2.9.3/dist/Chart.js"></script>
+    <script src="~/js/site.js"></script>
+
+</head>
+<body class="main chart-container">
+    <row>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Users
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in users)
+                {
+                    <tr>
+                        <td>
+                            <a asp-controller="Statistics" asp-action="UserStats" asp-route-id="@user.Id">@user.UserName</a>
+
+                        </td>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+    </row>
+    
+    <canvas id="myChart" style="border:solid"></canvas>
+    <script>chart("Test", 3, 3)</script>
+</body>
+<footer>
+
+</footer>
