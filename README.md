@@ -1,5 +1,10 @@
 # TicketDashboard
 
+## Description
+This project is a rough prototype for a ticketing or help desk solution. Employees are able to login, create tickets, claim tickets, and close tickets when the issue is solved. Admins can also see all tickets in the system as well as manage users and view metrics about the system and its users.
+
+
+## Screenshots
 ![Login Screen](https://github.com/Tathomp/TicketDashboard/blob/main/Screenshots/loginscreen.PNG)
 
 - Users must log in to dashboard to access any of its features.
@@ -40,6 +45,6 @@
 
 - This screen shows the stats for the systems as a whole and allows admins to see the metrics of individual users.
 
-![User Metrics Screen](https://github.com/Tathomp/TicketDashboard/blob/main/Screenshots/statuser.PNG)
+![User Metrics Screen](https://github.com/Tathomp/TicketDashboard/blob/main/Screenshots/statsuser.PNG)
 
 - This screen show the metrics of any given user. It shows the number of tickets claimed and closed by the user.
